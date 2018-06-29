@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Bienvenido!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-item text-center>
+      <img [src]="_up.usuario.imagen">
+    </ion-item>
+    <ion-item>{{_up.usuario.nombre}}</ion-item>
+    <ion-item>{{_up.usuario.email}}</ion-item>
+    <ion-item>{{_up.usuario.uid}}</ion-item>
+    <ion-item>{{_up.usuario.provider}}</ion-item>
+  </ion-list>
+
+  <button ion-button block color="danger" (click)="salir()">
+    Cerrar Sesión
+  </button>
 </ion-content>

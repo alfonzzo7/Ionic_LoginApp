@@ -1,0 +1,26 @@
+<ion-content padding text-center>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="top-20">
+        <img src="./assets/imgs/app-logo.png">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="top-20">
+        <h3>Ionic Login App</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row class="top-5">
+      <ion-col>
+        <button ion-button color="google" icon-left block (click)="singInGoogle()">
+          <ion-icon name="logo-google"></ion-icon>
+          Google
+        </button>
+        <button ion-button color="facebook" icon-left block (click)=signInWithFacebook()>
+          <ion-icon name="logo-facebook"></ion-icon>
+          Facebook
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
